@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7fcff;
+    background-image: linear-gradient(180deg, #8BC6EC 0%, #f7fcff 100%);
+
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+h1,
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 27px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 17px;
+}
+
+main {
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: #0378A6;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header nav{                     
+    margin-left:120px;
+    display: flex;
+    gap:35px;
+}
+header nav a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+header nav a:hover{
+    font-weight: 700;
+}
+h1 {
+    margin-right: 300px;
+    padding: 20px 0px;
+    color: white;
+}
+
+
+.izquierda,
+.derecha {
+    background-color: white;
+    color: black;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    height: auto;
+    border: 1px solid;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width:796px) {
+    .izquierda, .derecha{
+        flex: 1 1 550px;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+    .izquierda > ul h3{
+        display: flex;    
+    }
+    .centro{
+        flex: 1 1 650px;
+    } 
+    h1{
+        margin-right: 0px;
+    }
+}
+.izquierda:hover,
+.derecha:hover {
+    border: 0px;
+    color: white;
+    background-color: #0378A6;
+}
+
+.izquierda {
+    padding-bottom: 20px;
+}
+
+.izquierda h2 {
+    margin-top: revert;
+    margin-bottom: 10px;
+}
+
+.izquierda h3 {
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+.submenu {
+    list-style: circle;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.centro ul {
+    margin-top: 10px;
+}
+
+.centro {
+    border-radius: 10px;
+    margin: auto;
+    width: 55%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cashFlow {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #0367A6;
+    padding-bottom: 20px;
+}
+
+.tarjetasCredito {
+    background-color: #0378A6;
+    padding-bottom: 20px;
+}
+
+.tarjetasCredito img,
+.cashFlow img {
+    filter: invert(100%);
+}
+
+.ahorros {
+    color: black;
+    background-color: #99d0f2;
+    padding-bottom: 20px;
+}
+
+.centro h1 {
+    margin-bottom: 20px;
+}
+
+.centro ul {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centro .header_modulo {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    margin-left: 40px;
+}
+
+.header_modulo h2 {
+    margin-left: 10px;
+}
+
+.centro .header_modulo img {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.centro .modulo .requisitos li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(240, 248, 255);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.centro .modulo li {
+    width: 25%;
+    background-color: white;
+    margin: 0px 5px;
+    border-radius: 5px;
+    color: black;
+}
+
+.centro .modulo li:hover {
+    box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.75);
+}
+
+.centro ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27%;
+    height: 45px;
+    cursor: pointer;
+}
+
+.centro .requisitos li:first-child {
+    border-top-left-radius: 20px;
+    color: black;
+}
+
+.centro .requisitos li:nth-child(2) {
+    color: white;
+}
+
+.centro .requisitos li:last-child {
+    border-bottom-right-radius: 20px;
+    color: white;
+}
+
+.claro {
+    background-color: #CFF5E7;
+}
+
+
+.normal {
+    background-color: #59C1BD;
+
+}
+
+.oscuro {
+    background-color: #0D4C92;
+
+}
+
+.centro h1 {
+    text-align: center;
+}
+
+.centro .cashFlow>h2 {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.centro p {
+    font-size: 0px;
+    margin: 0px;
+    margin-left: 40px;
+    margin-top: 20px;
+    transition: .4s;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.cashFlow:hover #introduccion,
+.tarjetasCredito:hover #introduccion,
+.ahorros:hover #introduccion {
+    font-size: 17px;
+    font-weight: 700;
+    transition: .4s;
+}
+
+.derecha {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.barra {
+    margin: 20px 0px;
+    width: 150px;
+    height: 15px;
+    background-color: rgb(208, 232, 252);
+    border-radius: 5px;
+}
+
+.barra-progreso1,
+.barra-progreso2,
+.barra-progreso3 {
+    width: 70%;
+    height: 100%;
+    background-color: #0D4C92;
+    border-radius: 5px;
+}
+
+.barra-progreso2 {
+    width: 40%;
+}
+
+.barra-progreso3 {
+    width: 80%;
+}
